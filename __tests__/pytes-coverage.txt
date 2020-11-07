@@ -1,0 +1,48 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.8.5, pytest-6.1.0, py-1.9.0, pluggy-0.13.1
+benchmark: 3.2.3 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /Users/kuncoro.barot/Documents/01.Sequislife/base-architecture
+plugins: metadata-1.10.0, html-2.1.1, cov-2.10.1, Faker-4.5.0, benchmark-3.2.3
+collected 18 items
+
+test/core/errors_test.py .                                               [  5%]
+test/core/preparation_test.py ..                                         [ 16%]
+test/interfaces/repository_interface_test.py ..                          [ 27%]
+test/interfaces/service_interface_test.py ..                             [ 38%]
+test/routes/items_test.py .......                                        [ 77%]
+test/routes/users_test.py ....                                           [100%]
+
+---------- coverage: platform darwin, python 3.8.5-final-0 -----------
+Name                                  Stmts   Miss  Cover
+---------------------------------------------------------
+app/__init__.py                           0      0   100%
+app/deliveries/__init__.py                0      0   100%
+app/deliveries/item_controller.py        35      0   100%
+app/deliveries/user_controller.py        50      0   100%
+app/interfaces/__init__.py                0      0   100%
+app/middlewares/__init__.py               0      0   100%
+app/middlewares/di.py                     3      0   100%
+app/models/__init__.py                    0      0   100%
+app/models/item_model.py                 10      0   100%
+app/models/user_model.py                 11      0   100%
+app/repositories/__init__.py              0      0   100%
+app/repositories/item_repository.py      23      0   100%
+app/repositories/user_repository.py      31      0   100%
+app/routes/__init__.py                    0      0   100%
+app/routes/api.py                         6      0   100%
+app/schemas/__init__.py                   0      0   100%
+app/schemas/general_schema.py             7      0   100%
+app/schemas/item_schema.py               14      0   100%
+app/schemas/token_schema.py               7      0   100%
+app/schemas/user_schema.py               16      0   100%
+app/usecases/__init__.py                  0      0   100%
+app/usecases/item_service.py             15      0   100%
+app/usecases/user_service.py             17      0   100%
+app/utils/hash.py                         6      0   100%
+app/utils/metadata.py                     1      0   100%
+app/utils/uuid.py                         3      0   100%
+---------------------------------------------------------
+TOTAL                                   255      0   100%
+
+
+============================== 18 passed in 5.14s ==============================
