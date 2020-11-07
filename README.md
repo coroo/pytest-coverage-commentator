@@ -1,6 +1,6 @@
 # Pytest Coverage Commentator
 
-A Github action to comments a Pytest Coverage on PR. Please note: this action only available at pull request.
+A Github action to comments a Pytest Coverage on PR. Please note: this action only available on pull request.
 
 ## GitHub Action
 
