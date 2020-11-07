@@ -32,7 +32,7 @@ jobs:
       run: |
         pytest --cache-clear --cov=app test/ > pytest-coverage.txt
     - name: Comment coverage
-      uses: coroo/pytest-coverage-commentator@v1.0.1
+      uses: coroo/pytest-coverage-commentator@v1.0.2
 ```
 
 ## Action Input
@@ -47,7 +47,7 @@ You can see the action block with all variables as below:
 
 ```yml
     - name: pytest-coverage-commentator
-      uses: coroo/pytest-coverage-commentator@v1.0.1
+      uses: coroo/pytest-coverage-commentator@v1.0.2
       with:
         pytest-coverage: pytest-coverage.txt
 ```
