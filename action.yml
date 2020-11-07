@@ -1,6 +1,9 @@
 name: 'Pytest Coverage Commentator'
 description: 'A Github action to comments a Pytest Coverage on PR.'
 author: 'Kuncoro Wicaksono'
+branding:
+  icon: 'message-circle'  
+  color: 'yellow'
 inputs:
   pytest-coverage:
     description: 'Where to find the txt output of pytest-coverage'
