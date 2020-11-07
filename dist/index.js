@@ -1463,7 +1463,7 @@ function run() {
     var _a;
     return __awaiter(this, void 0, void 0, function* () {
         if (github.context.eventName !== 'pull_request') {
-            core.setFailed('Can only run on pull requests!');
+            core.info('Comment only will be created on pull requests!');
             return;
         }
         const githubToken = core.getInput('token');

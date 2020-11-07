@@ -63,7 +63,7 @@ function createMessage(pytestResult: any): string {
 
 async function run(): Promise<void> {
   if (github.context.eventName !== 'pull_request') {
-    core.setFailed('Can only run on pull requests!')
+    core.info('Comment only will be created on pull requests!')
     return
   }
 
