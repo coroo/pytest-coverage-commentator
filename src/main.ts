@@ -45,7 +45,9 @@ function createMessage(pytestResult: any): string {
         const tabOfText = lineOfText[i].split(/\s+/)
         for (const t in tabOfText) {
           if (tabOfText[t] !== '') {
-            tabOfText[t] = `| ${tabOfText[t]}`
+            // Handle __init__.py 
+            const escapedText = tabOfText[t].replaceAll('__', '\\_\\_');
+            tabOfText[t] = `| ${escapedText}`
           } else {
             delete tabOfText[t]
           }
